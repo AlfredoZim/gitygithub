@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pruebas JS</title>
+  </head>
+  <body>
+    <h1>Archivo de pruebas</h1>
+    <script>
+      // CLASE 2
+      // Imprimir un mensaje con el nombre y la edad de la persona
+      function tuNombre(nombre, apellido) {
+        console.log(`Nombre completo: ${nombre} ${apellido}`);
+      }
+
+      // Imprimir un mensaje que nos diga si somos mayores de edad
+      function mayorEdad(edad) {
+        if (edad >= 18) {
+          frase = "Eres mayor de edad";
+        } else {
+          frase = "Eres menor de edad";
+        }
+        console.log(frase);
+      }
+
+      // Imprimir un mensaje con el dia de nuestro nacimiento
+
+      //tuNombre('Alfredo','Gómez')
+      //mayorEdad(22)
+    </script>
+    <script>
+      // CLASE 3
+      function nombreEdad(nombre) {
+        let edad = prompt("Ingresa tu edad: ");
+        let frase;
+        if (edad >= 18) {
+          frase = "eres mayor de edad.";
+        } else {
+          frase = "eres menor de edad.";
+        }
+        alert(`${nombre}, ${frase}`);
+      }
+      //nombreEdad('Alfredo');
+
+      //Escribir un programa que pida al usuario un numero entero y muestre si es par o inpar
+      function comprobar(numero) {
+        if (numero % 2 == 0) {
+          alert("El numero es PAR");
+        } else {
+          alert("El número es IMPAR");
+        }
+      }
+      //let numero = prompt("Ingresa un numero: ")
+      //comprobar(numero)
+
+      //que almacene la cadena de caracteres contraseña en una varuable, pregunte al usuario por la contraseña introducida y si coincide
+      function comprobar2(contrasena) {
+        let pedir = prompt("Contraseña: ");
+        if (pedir.toLowerCase() == contrasena.toLowerCase()) {
+          alert("Accedo concedido!!");
+        } else {
+          alert("Accedo denegado!!");
+        }
+      }
+      const contrasena = "contraseña";
+      comprobar2(contrasena);
+    </script>
+  </body>
+</html>
